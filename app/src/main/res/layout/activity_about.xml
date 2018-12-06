@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main2"
+    tools:context=".about">
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_dark"
+        android:text="-------About Us-------"
+        android:textColor="#f7eaea"
+        android:textSize="30dp"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="60dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tx1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:text="
+        Gifts Idea offers a satisfying online gifting experience to all its customers. "
+        android:textColor="#48146c"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tx2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tx1"
+        android:layout_marginTop="20dp"
+        android:text="        We are known for our trustable online gift explosion box delivery service."
+        android:textColor="#48146c"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/tx3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:text="        So, choose lovely gifts for your close ones, relatives or friend online from Gifts Idea and let us send your love to them on your behalf."
+        android:textColor="#48146c"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tx4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tx3"
+        android:layout_marginTop="20dp"
+        android:text="        without any inconvenience. "
+        android:textColor="#48146c"
+        android:textSize="20dp" />
+</LinearLayout>
+</RelativeLayout>

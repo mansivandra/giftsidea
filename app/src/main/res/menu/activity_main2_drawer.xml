@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item1
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/menu_login"
+            android:title="Login" />
+        <item2
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/menu_trackorder"
+            android:title="Track Order" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/menu_payment"
+            android:title="Payment Options" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/menu_about"
+            android:title="About us" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/menu_support"
+                android:title="Customer Support" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/menu_rating"
+                android:title="rating Us?"
+              />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loveexplosion"
+    android:background="@drawable/main2">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tt"
+        android:text="Love Explosion Box"
+        android:textSize="30dp"
+        android:gravity="center_horizontal"
+        android:background="#0f22f2"
+        android:textColor="#e7ca0b"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tt"
+        />
+    <LinearLayout
+        android:id="@+id/SliderDots"
+        android:layout_below="@+id/viewpager"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="#de2929"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SliderDots"
+        android:id="@+id/ll"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/t1"
+            android:text="Free Shipping"
+            android:textColor="#f41212"
+            android:background="#22b3ec"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="#72f2e3"
+            android:gravity="center_horizontal"
+            android:text="Cash on Delivery"
+            android:textColor="#b117b9"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll5"
+            android:layout_below="@+id/ll"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:layout_marginLeft="5dp"
+                android:background="#72f2e3"
+                android:gravity="center_horizontal"
+                android:text="Online Order "
+                android:textColor="#b117b9"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="#22b3ec"
+                android:text="Online Payment 10% Discount"
+                android:textColor="#f41212"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+
+    <TableLayout
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ll5"
+        android:layout_marginTop="10dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingRight="2dp"
+                android:text="Required Pictures :"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <TextView
+                android:text="47 Photos (Minimum)(E-mail)"
+                android:textColor="#000"
+                android:textSize="12dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingRight="5dp"
+                android:text="Cash On Delivery  :"
+                android:textSize="12dp" />
+
+            <TextView
+                android:text="Yes. Mostly available all over India."
+                android:textSize="12dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingRight="5dp"
+                android:textColor="#000"
+                android:text="Delivery Time        :"
+                android:textSize="12dp" />
+
+            <TextView
+                android:text=" Metros - 2 to 5 days | Other Cities - 3 to 7 days."
+                android:textColor="#000"
+                android:textSize="12dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingRight="5dp"
+                android:text="Box Explosion       :"
+                android:textSize="12dp" />
+
+            <TextView
+                android:text="Red and Black with Message Bottle Inside."
+                android:textSize="12dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingRight="5dp"
+                android:textColor="#000"
+                android:text="Product  Detail      :"
+                android:textSize="12dp" />
+
+            <TextView
+                android:text="Product will be as shown  in Video"
+                android:textColor="#000"
+                android:textSize="12dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Size                         :    "
+                android:textSize="12dp" />
+
+            <TextView
+                android:text="15 cm (when Close), 42cm (when Open)"
+                android:textSize="12dp" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="134dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e914a5"
+            android:text="Send Photos on Whatsapp 74909 93900 with your contact details"
+            android:textColor="#faf3f3"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="90dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Love Explosion Box"
+            android:textColor="#554be2"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text=" 1299 /-"
+            android:textColor="#554be2"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#f7f8f9"
+            android:drawableLeft="@drawable/buynow"
+            android:text="BUY NOW "
+            android:textColor="#ea1818"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp" />
+
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="#f7f8f9"
+            android:drawableLeft="@drawable/playvideo"
+            android:onClick="ShowPopup"
+            android:text="play video"
+            android:textColor="#ea1818"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+</RelativeLayout>
