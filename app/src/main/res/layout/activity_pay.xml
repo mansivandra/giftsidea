@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -84,12 +87,48 @@
                     />
             </TableRow>
 <TableRow>
-    <TextView
-        android:text="Qty     : "
-        android:textColor="#204d44"
-        android:id="@+id/text5"
-        android:textSize="25dp"
-        />
+
+        <TextView
+            android:id="@+id/quentatityLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity:"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/decrement_button"
+            android:background="@null"
+            android:onClick="decrement"
+            android:textSize="40sp"
+            android:text="-"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_gravity="center"
+            android:text="0"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtCount"
+            android:textSize="30sp"/>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/increment_button"
+            android:background="@null"
+            android:onClick="increment"
+            android:textSize="40sp"
+            android:text="+"/>
+
+    </LinearLayout>
 </TableRow>
             <TableRow>
                 <TextView
@@ -158,14 +197,30 @@ android:layout_marginTop="5dp"
                 android:layout_marginLeft="20dp"
                 android:textSize="15dp" />
         </LinearLayout>
-            <TextView
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Amount Payable:"
                 android:layout_below="@+id/linear5"
                 android:textStyle="bold"
+                   android:id="@+id/text8"
                 android:textColor="#000"
                 android:textSize="25dp"/>
+
+               <TextView
+                   android:layout_width="150dp"
+                   android:layout_height="wrap_content"
+                   android:text="1299/-"
+                   android:textStyle="bold"
+                   android:textColor="#000"
+                   android:textSize="25dp"
+                   android:gravity="end"
+                   android:id="@+id/text9"/>
+           </LinearLayout>
 
 <Button
     android:layout_width="match_parent"
@@ -178,3 +233,4 @@ android:layout_marginTop="5dp"
     </LinearLayout>
 
 </RelativeLayout>
+    </ScrollView>
